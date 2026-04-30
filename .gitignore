@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Local secrets/config
+.env
+.env.*
+
+# Runtime generated data
+data/debug_log.json
+data/recordings/
+data/calls_data.csv
+data/calls_data_backup.csv
+
+# Streamlit/local tooling
+.streamlit/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db

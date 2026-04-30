@@ -1,0 +1,64 @@
+{
+  "test_cases": [
+    {
+      "id": "TC01",
+      "name": "Interested and qualified",
+      "user_inputs": ["Yes, I am interested", "Yes, I have gold ornaments", "I need one lakh", "I am salaried"],
+      "expected": {"is_interested": true, "has_physical_gold": true, "qualification_status": "Qualified"}
+    },
+    {
+      "id": "TC02",
+      "name": "Not interested early exit",
+      "user_inputs": ["No, I am not interested in any loan"],
+      "expected": {"is_interested": false, "qualification_status": "Not Interested"}
+    },
+    {
+      "id": "TC03",
+      "name": "Interested but no gold",
+      "user_inputs": ["Yes, interested", "No, I don't have gold"],
+      "expected": {"is_interested": true, "has_physical_gold": false, "qualification_status": "Disqualified"}
+    },
+    {
+      "id": "TC04",
+      "name": "OTP shared by user",
+      "user_inputs": ["My OTP is 123456"],
+      "expected": {"compliance_warning": "Do not share O T P"}
+    },
+    {
+      "id": "TC05",
+      "name": "PAN shared by user",
+      "user_inputs": ["My PAN is ABCDE1234F"],
+      "expected": {"compliance_warning": "Do not share P A N"}
+    },
+    {
+      "id": "TC06",
+      "name": "Amount normalization lakh",
+      "user_inputs": ["I need 2.5 lakh"],
+      "expected": {"loan_amount": 250000}
+    },
+    {
+      "id": "TC07",
+      "name": "Amount normalization thousand",
+      "user_inputs": ["I need 75 thousand"],
+      "expected": {"loan_amount": 75000}
+    },
+    {
+      "id": "TC08",
+      "name": "Unclear interest answer",
+      "user_inputs": ["Maybe later"],
+      "expected": {"is_interested": true, "follow_up": "Offer callback"}
+    },
+    {
+      "id": "TC09",
+      "name": "Mixed language response",
+      "user_inputs": ["Haan interest hai", "Gold hai mere paas", "one lakh chahiye"],
+      "expected": {"is_interested": true, "has_physical_gold": true, "loan_amount": 100000}
+    },
+    {
+      "id": "TC10",
+      "name": "Partial answers only",
+      "user_inputs": ["Yes interested", "Not sure about amount right now"],
+      "expected": {"is_interested": true, "loan_amount": 0}
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+### BFSI Voice Agent Test Scenarios - Gold Loan Qualification
+
+1. **Happy Path (Fully Qualified)**
+   - Input: "Yes, I am interested", "I have 50 grams of gold", "I need 1 lakh", "I am salaried", "Tomorrow 11 AM works".
+   - Expected: is_interested=True, has_physical_gold=True, status="Qualified".
+
+2. **Not Interested (Early Exit)**
+   - Input: "Hello", "Actually I'm not interested in any loans".
+   - Expected: is_interested=False, status="Not Interested", call ends politely.
+
+3. **No Gold (Disqualified)**
+   - Input: "Yes I need a loan", "No, I don't have any gold jewellery".
+   - Expected: has_physical_gold=False, status="Disqualified", assistant offers other products or ends.
+
+4. **Privacy Protection (OTP Violation)**
+   - Input: "My OTP is 1234".
+   - Expected: Assistant must NOT store this and say "For your security, please do not share O T P".
+
+5. **Privacy Protection (PAN Request)**
+   - Input: "Do you want my PAN number? It is ABCDE1234F".
+   - Expected: Assistant must say "Please do not share P A N details on this call".
+
+6. **Mixed Language (Hinglish)**
+   - Input: "Haan, interest hai", "Gold ornaments hai mere paas".
+   - Expected: Correct slot extraction for interest and gold ownership.
+
+7. **Amount Normalization**
+   - Input: "I need around two and a half lakhs".
+   - Expected: loan_amount=250000.
+
+8. **Objection Handling (Interest Rate)**
+   - Input: "Interest rate bahut high hai".
+   - Expected: Assistant explains benefits or offers human callback.
+
+9. **Ambiguous Response**
+   - Input: "Maybe, I have to check with my wife".
+   - Expected: Assistant asks clarifying question or offers a callback.
+
+10. **Identity Refusal**
+    - Input: "Who are you? Why are you calling?"
+    - Expected: Assistant re-introduces SecureBank and asks if it's a good time.

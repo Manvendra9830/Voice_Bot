@@ -1,0 +1,47 @@
+{
+  "intents": [
+    {
+      "intent": "greeting_and_identity",
+      "description": "Initial greeting and confirmation of the customer's identity.",
+      "sample_utterances": ["Hello", "Yes, this is him", "Speaking", "Who is this?"]
+    },
+    {
+      "intent": "loan_interest",
+      "description": "Customer expresses interest or disinterest in the gold loan product.",
+      "slots": ["is_interested"],
+      "sample_utterances": ["Yes, I am interested", "Tell me more", "No, I don't need a loan", "Not right now"]
+    },
+    {
+      "intent": "gold_qualification",
+      "description": "Customer confirms if they possess gold ornaments or coins.",
+      "slots": ["has_physical_gold"],
+      "sample_utterances": ["Yes, I have some jewellery", "I have gold coins", "No, I don't have gold"]
+    },
+    {
+      "intent": "loan_requirement",
+      "description": "Customer specifies the desired loan amount.",
+      "slots": ["loan_amount"],
+      "normalization": "Convert spoken numbers like 'one lakh' to 100000.",
+      "sample_utterances": ["I need fifty thousand", "Around 2 lakhs", "100000"]
+    },
+    {
+      "intent": "employment_status",
+      "description": "Customer provides their current employment type.",
+      "slots": ["employment_type"],
+      "values": ["salaried", "self-employed", "business"],
+      "sample_utterances": ["I work in a private company", "I have my own business", "I am a freelancer"]
+    },
+    {
+      "intent": "next_step_scheduling",
+      "description": "Customer agrees to a branch visit or follow-up.",
+      "sample_utterances": ["Yes, 11 AM works", "Can you call me later?", "Where is the branch?"]
+    }
+  ],
+  "slots": {
+    "customer_name": { "type": "string", "requirement": "required" },
+    "is_interested": { "type": "boolean", "requirement": "required" },
+    "has_physical_gold": { "type": "boolean", "requirement": "required" },
+    "loan_amount": { "type": "number", "requirement": "required" },
+    "employment_type": { "type": "string", "requirement": "optional" }
+  }
+}
