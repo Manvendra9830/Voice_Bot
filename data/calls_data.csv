@@ -1,0 +1,58 @@
+Timestamp,Call ID,Customer Name,Interested,Has Gold,Loan Amount,Employment,Duration,Status,Qualification Status,Recording URL,Stereo Recording URL,Recording File,Stereo Recording File,Transcript
+2026-04-30 21:58:58,019ddf34-402f-7669-9caa-9e7399f3bca4,Unknown,False,False,0.0,Unknown,0,customer-did-not-answer,Not Interested,,,,,[]
+2026-04-30 22:10:03,019ddf41-33f0-7000-ac32-455f991099b2,Manu,True,True,69000.0,self-employed,0,customer-ended-call,Qualified,https://storage.vapi.ai/019ddf41-33f0-7000-ac32-455f991099b2-1777567194967-e9352cce-1ace-4214-bbbe-5e76de89ec2d-mono.wav,https://storage.vapi.ai/019ddf41-33f0-7000-ac32-455f991099b2-1777567194967-3737f604-8fce-4004-b982-ac0a495164e7-stereo.wav,,,"AI: Hello, Manu.
+User: Hi.
+AI: Hi. I'm calling from Secure Bank regarding go loan offers. This call may be recorded for quality purposes. Is this a good time to speak for two minutes?
+User: Yes.
+AI: We are offering gold loans with attractive rates and quick dispersal. Are you interested in taking a gold loan?
+User: Yes. I'm interested.
+AI: Do you have gold ornaments or coins available for the loan?
+User: Yes. I have.
+AI: What loan amount are you looking for?
+User: I'm looking for sixty nine thousand.
+AI: Are you salaried, self employed, a business owner.
+User: I'm self employed
+AI: Thank you. Based on your response, I can arrange the next step. Would you prefer a branch visit or a callback from our executive?
+User: I will go for branch visit.
+AI: Perfect. You will receive branch details by SMS. Please carry valid KYC documents such as PAN and Aadhaar.
+User: Sure.
+AI: Sunday is that customer name, Manu, is interested through as physical gold. True. Loan amount, six nine zero zero zero. Employment type, self employed.
+"
+2026-04-30 22:21:27,019ddf4c-52cc-7bb6-9a2c-d84a63e52528,Manu,False,False,0.0,Unknown,0,customer-ended-call,Not Interested,https://storage.vapi.ai/019ddf4c-52cc-7bb6-9a2c-d84a63e52528-1777567877008-b43944cf-e17a-49e8-9c6e-6cc05d81a0de-mono.wav,https://storage.vapi.ai/019ddf4c-52cc-7bb6-9a2c-d84a63e52528-1777567877008-c99edc43-c2ec-4bf2-9abd-333dff63e6c4-stereo.wav,,,"AI: Hello, Manu.
+User: Hello?
+AI: Hi. I am calling from Secure Bank regarding gold loan offers. This call may be recorded for quality purposes. Is this a good time to speak for two minutes?
+User: Yes. Go ahead.
+AI: We are offering gold loans with attractive rates and quick dispersal. Are you interested in taking a gold loan?
+User: Yes. No. No. No. I'm not interested.
+AI: No problem. Thank you for your time. Have a great day.
+User: Okay. Sure.
+AI: Son, Eddie. Customer name, Manu. ID
+"
+2026-04-30 22:27:14,019ddf51-9ce7-7445-9503-a8069662c691,Manu,True,False,0.0,Unknown,0,customer-ended-call,Disqualified,https://storage.vapi.ai/019ddf51-9ce7-7445-9503-a8069662c691-1777568228304-f2a4f2c6-1bd1-417d-8e6d-a9225264ec33-mono.wav,https://storage.vapi.ai/019ddf51-9ce7-7445-9503-a8069662c691-1777568228304-e77314dc-a51b-411d-952c-00d94b2c112a-stereo.wav,,,"AI: Hello, Manu.
+User: Hello?
+AI: Hi. I'm calling from Secure Bank regarding go loan offers. This call may be recorded for quality purposes. Is this a good time to speak for two minutes?
+User: Yes. This is the good time.
+AI: We are offering gold loans with attractive rates and quick dispersal. Are you interested in taking a gold loan?
+User: Yes. I'm interested.
+AI: Do you have gold ornaments or coins available for the loan?
+User: No. I don't have gold ornament, but you can check my other card.
+AI: I will have our team assist you with that information.
+"
+2026-04-30 22:29:39,019ddf53-29dc-7001-8426-ff6d6531e29f,Manu,True,True,0.0,salaried,0,customer-ended-call,Qualified,https://storage.vapi.ai/019ddf53-29dc-7001-8426-ff6d6531e29f-1777568372652-f61091bc-7a1d-4873-848b-9df5231eed17-mono.wav,https://storage.vapi.ai/019ddf53-29dc-7001-8426-ff6d6531e29f-1777568372652-e96794d8-4ac6-4cad-8f1d-18ce157c6137-stereo.wav,,,"AI: Hello, Manu.
+User: Hello?
+AI: Hi. I am calling from Secure Bank regarding gold loan offers. This call may be recorded for quality purposes. Is this a good time to speak for two minutes?
+User: Yes. This is the good time. You can check my other card for that.
+AI: For your security, please do not share your OTP PIN CVV full Aadhaar number or full PAN details on this call. We are offering gold loans with attractive rates and quick disbursal. Are you interested in taking a gold loan?
+User: Yes. I'm interested.
+AI: Do you have gold ornaments or coins available for the loan?
+User: Yes. I do have.
+AI: What loan amount are you looking for?
+User: You can check my load requirement on the basis of my PAN number or PAN number.
+AI: For your security, please do not share your OTP PIN CVV full Aadhaar number or full PIN details on this call. What loan amount are you looking for?
+User: I'm looking for zero rupees.
+AI: Are you salaried, self employed, or a business owner?
+User: I am salted.
+AI: Thank you. Based on your response, I can arrange the next step. Would you prefer a branch visit or a callback from our executive?
+User: None of them.
+AI: No problem. Thank you for your time. Have a great day.
+"
